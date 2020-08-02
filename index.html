@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Background color change</title>
+</head>
+<body>
+<style>
+body {
+				background-color : white; 
+    text-align: center;
+    margin-top : 160px; 
+				}
+button {
+				padding: 10px; 
+				border-radius : 5px; 
+				box-shadow: 0px 2px 2px 2px darkgray; 
+				border: 0.1px solid transparent; 
+				background-color: hsl(1, 67%, 87%);
+				}
+				
+</style>
+<script>
+		var color = 1; 
+	function change() {
+					var body = document.getElementsByTagName("body"); 
+					 if(color==1) { body[0].style.backgroundColor = 'red'; 
+					 color = 2; 
+					 } 
+else if(color==2)
+ { body[0].style.backgroundColor = 'orange'; 
+ color = 3;
+  } 
+  else if(color==3){
+body[0].style.backgroundColor = 'yellow';
+   color = 4; 
+   } 
+   else if(color==4){
+body[0].style.backgroundColor = 'green';
+   color = 5;
+   }
+   else if(color==5){
+body[0].style.backgroundColor = 'blue';
+   color = 6;
+         }
+else if(color==6){
+body[0].style.backgroundColor = 'indigo';
+   color = 7;
+   }
+else if(color==7){
+body[0].style.backgroundColor = 'violet';
+   color = 1;
+   }
+		}
+
+</script>
+<button onclick="change()">click me</button>
+</body>
+</html>
